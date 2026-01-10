@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  postgres:
+    build: .
+    ports:
+      - "15432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: testPassword
+      POSTGRES_DB: lditest
+    volumes:
+      - postgres_10_5_data_ssl:/var/lib/postgresql/data
+volumes:
+  postgres_10_5_data_ssl:
