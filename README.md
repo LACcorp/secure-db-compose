@@ -3,6 +3,9 @@
 This repository provides ready-to-use Docker Compose configurations for running **databases with mandatory SSL/TLS encryption**.  
 All sensitive artifacts (certificates, keys) are generated at build time—**nothing is committed to source control**.
 
+> 🔒 **For local development and testing only**  
+> This setup uses **self-signed certificates** (no CA configured). Do not use in production environments.
+
 # 🐘 Postgres
 ## 1. Start the Database
 
